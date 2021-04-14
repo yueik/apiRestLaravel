@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function getExcertAttribute() {
+    public function getExcerptAttribute() {
         return substr($this->content, 0, 120);
     }
 
